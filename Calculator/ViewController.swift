@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     //This is a connection to the label in our view
     @IBOutlet weak var labelDisplay: UILabel!
+
     
     //Create an instance (object) of the Calculator class
     var model = Calculator()

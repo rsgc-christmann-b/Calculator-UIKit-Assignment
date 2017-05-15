@@ -190,6 +190,9 @@
                             <constraint firstAttribute="bottomMargin" secondItem="WyX-0z-jvp" secondAttribute="bottom" id="wOX-q1-oUj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelDisplay" destination="Tgs-a5-olg" id="iQo-OH-qBS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
