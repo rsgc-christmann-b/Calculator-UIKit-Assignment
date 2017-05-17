@@ -57,7 +57,29 @@ class Calculator {
         updateState()
     }
     
+    func plusminus() {
+     
+        operation = Operation.plusminus
+        if computedValue != nil{
+            computedValue = computedValue! * (-1)
+            
+        } else {
+            updateState()
+            computedValue = computedValue! * (-1)
+        }
+       
+    }
     
+    
+    func percentage() {
+        operation = Operation.percentage
+        if computedValue != nil{
+            computedValue = computedValue! / 100
+        } else {
+            updateState()
+            computedValue = computedValue! / 100
+        }
+    }
     /**
      Updates calculator state.
      

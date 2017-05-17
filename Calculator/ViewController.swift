@@ -26,6 +26,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+   
+    @IBAction func zeroPressed(_ sender: Any) {
+        model.addToNewValue(digit: "0")
+        labelDisplay.text = model.providedValue
+    }
+    
+    @IBAction func periodPressed(_ sender: Any) {
+        model.addToNewValue(digit: ".")
+        labelDisplay.text = model.providedValue
+    }
+    
     @IBAction func onePressed(_ sender: Any) {
         model.addToNewValue(digit: "1")
         labelDisplay.text = model.providedValue
@@ -71,11 +82,21 @@ class ViewController: UIViewController {
         labelDisplay.text = model.providedValue
     }
     
+
     @IBAction func clear(_ sender: Any) {
         model.clear()
+        labelDisplay.text = model.providedValue
     }
     
+    @IBAction func plusminus(_ sender: Any) {
+        model.plusminus()
+        labelDisplay.text = String(format: "%g", model.computedValue!)
+    }
     
+    @IBAction func percentage(_ sender: Any) {
+        model.percentage()
+        labelDisplay.text = String(format: "%g", model.computedValue!)
+    }
     
     @IBAction func divide(_ sender: Any) {
         model.divide()
@@ -107,10 +128,7 @@ class ViewController: UIViewController {
     
     }
     
-    @IBAction func plusminus(_ sender: Any) {
-        
-        
-    }
+ 
     
     
 }
