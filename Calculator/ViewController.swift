@@ -31,5 +31,86 @@ class ViewController: UIViewController {
         labelDisplay.text = model.providedValue
     }
 
-}
+    @IBAction func twoPressed(_ sender: Any) {
+        model.addToNewValue(digit: "2")
+        labelDisplay.text = model.providedValue
+    }
+    
+    @IBAction func threePressed(_ sender: Any) {
+        model.addToNewValue(digit: "3")
+        labelDisplay.text = model.providedValue
+    }
 
+    @IBAction func fourPressed(_ sender: Any) {
+        model.addToNewValue(digit: "4")
+        labelDisplay.text = model.providedValue
+    }
+    
+    @IBAction func fivePressed(_ sender: Any) {
+        model.addToNewValue(digit: "5")
+        labelDisplay.text = model.providedValue
+    }
+    
+    @IBAction func sixPressed(_ sender: Any) {
+        model.addToNewValue(digit: "6")
+        labelDisplay.text = model.providedValue
+    }
+    
+    @IBAction func sevenPressed(_ sender: Any) {
+        model.addToNewValue(digit: "7")
+        labelDisplay.text = model.providedValue
+    }
+    
+    @IBAction func eightPressed(_ sender: Any) {
+        model.addToNewValue(digit: "8")
+        labelDisplay.text = model.providedValue
+    }
+    
+    @IBAction func ninePressed(_ sender: Any) {
+        model.addToNewValue(digit: "9")
+        labelDisplay.text = model.providedValue
+    }
+    
+    @IBAction func clear(_ sender: Any) {
+        model.clear()
+    }
+    
+    
+    
+    @IBAction func divide(_ sender: Any) {
+        model.divide()
+    }
+    
+    
+    @IBAction func multiply(_ sender: Any) {
+        model.multiply()
+        
+    }
+    
+    @IBAction func subtract(_ sender: Any) {
+        model.subtract()
+    }
+  
+    @IBAction func addition(_ sender: Any) {
+        model.add()
+    }
+    
+    @IBAction func equals(_ sender: Any) {
+        model.equals()
+        if model.computedValue != nil{
+            
+            labelDisplay.text = String(format:"%g", model.computedValue!)
+        }
+        
+    
+        
+    
+    }
+    
+    @IBAction func plusminus(_ sender: Any) {
+        
+        
+    }
+    
+    
+}
